@@ -1,0 +1,121 @@
+@import "./config";
+
+.terminal{
+  width: 97vw;
+  height: 400px;
+  margin: 20px auto;
+}
+
+.terminal__closed{
+  height: 0;
+  width: 97vw;
+  margin: 20px auto;
+  animation-name: close-terminal;
+  animation-duration: 1s;
+
+  .terminal--header{
+    background-color: $terminal-header;
+    width: 0;
+    height: 25px;
+    opacity: 1;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    animation-name: close-header;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    overflow: hidden;
+    animation-fill-mode: backwards;
+  }
+}
+
+@keyframes close-terminal {
+  0% { height: 400px; }
+  100% { height: 0; }
+}
+
+@keyframes close-header {
+  0% { width: inherit; margin: 0 auto;}
+  100% { width: 0; margin: 0 auto;}
+}
+
+.terminal--header{
+  background-color: $terminal-header;
+  width: inherit;
+  height: 25px;
+  opacity: 1;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: flex-start;
+
+  div{
+    margin-left: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+
+    div{
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      margin: 0 3px;
+    }
+
+    .close-icon{
+      background-color: $neon-red;
+    }
+
+    .minimize-icon{
+      background-color: $neon-yellow;
+    }
+
+    .expand-icon{
+      background-color: $neon-green;
+    }
+  }
+}
+
+.terminal--body{
+  width: inherit;
+  height: 100%;
+  background-color: $terminal-body;
+  opacity: .7;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+
+  p {
+    color: white;
+    margin-left: 8px;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .terminal{
+    width: 80vw;
+  }
+
+  .terminal__closed{
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .terminal{
+    height: 550px;
+  }
+
+  .terminal--header{
+    height: 30px;
+  }
+
+  .terminal__closed{
+    .terminal--header{
+      height: 30px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "./config";
+
+.landing{
+  background-image: url($mobile);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.name-and-title{
+  width: 95vw;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #9DBF16;
+  opacity: .25;
+}
+
+.filler{
+  height: 200vh;
+  width: 100vw;
+  background-color: $neon-blue;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .landing{
+    background-image: url($tablet);
+  }
+
+  .name-and-title{
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .landing{
+    background-image: url($desktop);
+  }
+}
