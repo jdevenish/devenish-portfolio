@@ -13,6 +13,10 @@
   animation-name: close-terminal;
   animation-duration: 1s;
 
+  .terminal--body{
+    overflow: hidden;
+  }
+
   .terminal--header{
     background-color: $terminal-header;
     width: 0;
@@ -83,14 +87,11 @@
   border-radius: 0 0 10px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  overflow: hidden;
+  //justify-content: flex-end;
+  overflow: auto;
 
-  p {
-    color: white;
-    margin-left: 8px;
-    margin-bottom: 6px;
-    font-weight: bold;
+  .command-prompt{
+    font-weight: 900;
   }
 }
 
@@ -101,6 +102,12 @@
 
   .terminal__closed{
     width: 80vw;
+  }
+
+  .terminal--body{
+    p{
+      font-size: 16px;
+    }
   }
 }
 
@@ -116,6 +123,18 @@
   .terminal__closed{
     .terminal--header{
       height: 30px;
+    }
+  }
+
+  .terminal--body{
+
+    p{
+      font-size: 18px;
+
+      span{
+        font-size: 18px;
+        font-weight: 900;
+      }
     }
   }
 }

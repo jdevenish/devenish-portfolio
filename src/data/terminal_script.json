@@ -1,0 +1,98 @@
+[
+  {
+    "input": "node render-name.js",
+    "output": [
+      "installing component Name.js ...",
+      "integrating Name.js with Landing.js ...",
+      "rebuild Landing.js ...",
+      "finalize text positioning ...",
+      "Install complete. 0 errors"
+    ],
+    "loading": [
+      "[",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "]"
+    ]
+  },
+  {
+    "input": "node render-positions.js",
+    "output": [
+      "installing component Posistions.js ...",
+      "integrating Positions.js with Landing.js ...",
+      "rebuild Landing.js ...",
+      "finalize text positioning ...",
+      "Install complete. 0 errors"
+    ],
+    "loading": [
+      "[",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "]"
+    ]
+  },
+  {
+    "input": "node render-social-media-icons.js",
+    "output": [
+      "installing component SocialMedia.js ...",
+      "integrating SocialMedia.js with Landing.js ...",
+      "rebuild Landing.js ...",
+      "finalize text positioning ...",
+      "Install complete. 0 errors"
+    ],
+    "loading": [
+      "[",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "]"
+    ]
+  },
+  {
+    "input": "node render-email.js",
+    "output": [
+      "installing component Email.js ...",
+      "integrating Email.js with Landing.js ...",
+      "rebuild Landing.js ...",
+      "finalize text positioning ...",
+      "Install complete. 0 errors"
+    ],
+    "loading": [
+      "[",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "]"
+    ]
+  }
+]
