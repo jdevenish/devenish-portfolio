@@ -86,9 +86,19 @@
   opacity: .7;
   border-radius: 0 0 10px 10px;
   display: flex;
-  flex-direction: column;
-  //justify-content: flex-end;
-  overflow: auto;
+  flex-direction: column-reverse;
+  overflow-y: auto;
+  justify-content: stretch;
+  align-self: stretch;
+  align-content: stretch;
+  .term--body--height{
+    //height: 100%;
+    ////overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+  }
 
   .command-prompt{
     font-weight: 900;
@@ -104,11 +114,11 @@
     width: 80vw;
   }
 
-  .terminal--body{
-    p{
-      font-size: 16px;
-    }
-  }
+  //.terminal--body{
+  //  p{
+  //    font-size: 16px;
+  //  }
+  //}
 }
 
 @media only screen and (min-device-width: 1024px) {
@@ -128,13 +138,23 @@
 
   .terminal--body{
 
-    p{
-      font-size: 18px;
-
-      span{
-        font-size: 18px;
-        font-weight: 900;
-      }
+    //p{
+    //  font-size: 18px;
+    //
+    //  span{
+    //    font-size: 18px;
+    //    font-weight: 900;
+    //  }
+    //}
+    .term--body--height{
+      //height: 100%;
+      ////overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-self: stretch;
+      align-items: stretch;
+      align-content: stretch;
     }
   }
 }

@@ -7,9 +7,94 @@ p {
   font-size: 14px;
 }
 
-span{
-  color: white;
-  font-family: 'Source Code Pro', monospace;
-  font-weight: 900;
-  font-size: 14px;
+.output-command {
+  animation-name: command-scroll;
+  animation-duration: 10ms;
+  animation-fill-mode: backwards;
+  //animation-timing-function: steps(10, end);
+  overflow: hidden;
+  height: 15px;
+}
+
+@keyframes command-scroll {
+  from { height: 0; }
+  to { height: 15px; }
+}
+
+.output-command__br {
+  animation-name: command-scroll__br;
+  animation-duration: 10ms;
+  animation-fill-mode: backwards;
+  //animation-timing-function: steps(10, end);
+  overflow: hidden;
+  height: 30px;
+}
+
+@keyframes command-scroll__br {
+  from { height: 0; }
+  to { height: 30px; }
+}
+
+.input-line{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  .input-prompt{
+    color: white;
+    white-space: nowrap;
+    animation-name: command-prompt;
+    animation-fill-mode: backwards;
+    animation-duration: 1ms;
+
+    p {
+      font-family: 'Source Code Pro', monospace;
+      font-weight: 900;
+      font-size: 16px;
+      width: 100%;
+      overflow:hidden;
+    }
+  }
+
+  .input-command {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    animation:
+      command-typewriter 1.5s backwards,
+      command-typewriter-height 1ms backwards
+  }
+
+  @keyframes command-prompt {
+    from { width: 0; height: 0; }
+    to { width: 100%; height: 16px; }
+  }
+
+  @keyframes command-typewriter {
+    from { width: 0; }
+    to { width: 80%; }
+  }
+
+  @keyframes command-typewriter-height {
+    from { height: 0; }
+    to { height: 100%; }
+  }
+}
+
+.input-prompt-final{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  animation: command-prompt-final 1ms 1 backwards;
+
+  p {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    font-size: 16px;
+  }
+}
+
+@keyframes command-prompt-final {
+  from { width: 0; height: 0; }
+  to { width: 100%; height: 16px; }
 }

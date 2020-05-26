@@ -9,11 +9,12 @@ import TerminalText from "./TerminalText";
  * CSS Files
  */
 import '../scss/Terminal.scss'
+import '../scss/TerminalText.scss'
 const terminalData = require('../data/terminal_script.json')
 
 
 function Terminal() {
-    const [close, setClose] = useState(false)
+    const [close, setClose] = useState(false);
 
     const onClose = () => {
         setClose(!close);
@@ -21,7 +22,7 @@ function Terminal() {
 
     const terminalCommands = terminalData.map((command, index) => {
         return(
-            <TerminalText command={command} key={index} />
+            <TerminalText command={command} index={index} key={index} />
         )
     });
 
@@ -37,8 +38,15 @@ function Terminal() {
                 </div>
             </div>
             <div className="terminal--body">
-                {terminalCommands}
-                <p className="command-prompt">justin-devenish.com %</p>
+                <div className="term--body--height">
+                    {terminalCommands}
+                    <div
+                        style={{ animationDelay: '9s' }}
+                        className="input-prompt-final">
+                        <p>justin-devenish.com %</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     );
