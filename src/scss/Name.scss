@@ -37,8 +37,9 @@
   width: 336px;
   z-index: 1;
   animation-name: render-email;
-  animation-duration: 2s;
-  animation-delay: 0s;
+  animation-duration: 3s;
+  animation-delay: 9350ms;
+  animation-fill-mode: backwards;
 
   a {
     transform: rotate(90deg);
@@ -65,12 +66,28 @@
   justify-content: center;
   margin-left: 15px;
   z-index: 1;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  animation-name: render-socialMedia;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-fill-mode: backwards;
 
   .iconify {
     color: $neon-red;
     width: 32px;
     height: 32px;
     margin: 10px 0 10px 0;
+  }
+
+  @keyframes render-socialMedia {
+    0% { left: 0; bottom: 100vh; }
+    25% { left: 0; bottom: 0; }
+    50% { left: 0; bottom: -20px; }
+    75% { left: 0; bottom: 15px; }
+    85% { left: 0; bottom: -10px; }
+    100% { left: 0; bottom: 0; }
   }
 }
 
