@@ -5,20 +5,19 @@
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
-}
 
-.name-and-title{
-  width: 95vw;
-  height: 300px;
-  margin: 0 auto;
-  background-color: #9DBF16;
-  opacity: .25;
+  .mainContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 
 .filler{
   height: 200vh;
-  width: 100vw;
-  background-color: $neon-blue;
+  //width: 100vw;
+  background-color: lightgrey;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -26,13 +25,16 @@
     background-image: url($tablet);
   }
 
-  .name-and-title{
-    width: 70vw;
-  }
 }
 
 @media only screen and (min-device-width: 1024px) {
   .landing{
     background-image: url($desktop);
+  }
+
+  .terminal--container{
+    position: relative;
+    left: 0;
+    top: -425px;
   }
 }
