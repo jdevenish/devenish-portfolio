@@ -12,20 +12,22 @@ import '../scss/TerminalText.scss'
 function TerminalText({ command, index }) {
 
     const outputCommands = command.output.map((output, outIndex) => {
-        const noBreak = <Fragment key={outIndex}>
-            <div style={{animationDelay: `${((index+1)*2300)+(outIndex*50)}ms`}}
-                 className="output-command">
-                <p>{output}</p>
-            </div>
-        </Fragment>;
+        const noBreak =
+            <Fragment key={outIndex}>
+                <div style={{animationDelay: `${((index+1)*2300)+(outIndex*50)}ms`}}
+                     className="output-command">
+                    <p>{output}</p>
+                </div>
+            </Fragment>;
 
-        const addBreak = <Fragment key={outIndex}>
-            <div style={{ animationDelay: `${((index+1)*2300)+(outIndex*50)}ms` }}
-                 className="output-command__br">
-                <p>{output}</p>
-                <br/>
-            </div>
-        </Fragment>
+        const addBreak =
+            <Fragment key={outIndex}>
+                <div style={{ animationDelay: `${((index+1)*2300)+(outIndex*50)}ms` }}
+                     className="output-command__with-br">
+                    <p>{output}</p>
+                    <br/>
+                </div>
+            </Fragment>;
 
        return outIndex === (command.output.length - 1) ? addBreak : noBreak
     });

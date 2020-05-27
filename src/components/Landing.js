@@ -27,10 +27,10 @@ function Landing() {
             </div>
             <div className="mainContent">
                 <div className="socialMedia">
-                    <span className="iconify" data-icon="brandico:linkedin-rect" data-inline="false"/>
-                    <span className="iconify" data-icon="fa:github-square" data-inline="false"/>
-                    <span className="iconify" data-icon="cib:codesandbox" data-inline="false"/>
-                    <span className="iconify" data-icon="simple-icons:repl-dot-it" data-inline="false"/>
+                    <a href="https://www.linkedin.com/in/justin-devenish/"><span className="iconify" data-icon="brandico:linkedin-rect" data-inline="false"/></a>
+                    <a href="https://github.com/"><span className="iconify" data-icon="fa:github-square" data-inline="false"/></a>
+                    <a href="https://codesandbox.io/u/jdevenish"><span className="iconify" data-icon="cib:codesandbox" data-inline="false"/></a>
+                    <a href="https://repl.it/@jdevenish"><span className="iconify" data-icon="simple-icons:repl-dot-it" data-inline="false"/></a>
                 </div>
 
                 <div className="emailAddress">

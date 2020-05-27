@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
+  background-position: center;
 
   .mainContent{
     display: flex;
@@ -12,17 +13,29 @@
     justify-content: space-between;
     flex-wrap: nowrap;
   }
+
+  .terminal--container{
+    position: relative;
+    left: 0;
+    top: -185px;
+    z-index: 2;
+  }
 }
 
 .filler{
   height: 200vh;
-  //width: 100vw;
   background-color: lightgrey;
 }
 
 @media only screen and (min-device-width: 768px) {
   .landing{
     background-image: url($tablet);
+
+    .terminal--container {
+      left: 16px;
+      top: -337px;
+      z-index: 0;
+    }
   }
 
 }
@@ -30,11 +43,11 @@
 @media only screen and (min-device-width: 1024px) {
   .landing{
     background-image: url($desktop);
-  }
 
-  .terminal--container{
-    position: relative;
-    left: 0;
-    top: -425px;
+    .terminal--container{
+      position: relative;
+      left: 0;
+      top: -425px;
+    }
   }
 }
