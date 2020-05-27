@@ -20,10 +20,14 @@ function Landing() {
 
     return (
         <div className="landing">
-            <div className="name-and-title">
-                <h1>Justin Devenish</h1>
-                <h3>Software Engineer</h3>
-                <h3>Product Manager</h3>
+            <div className="name-and-positions">
+                <div className="name">
+                    <h1>Justin Devenish</h1>
+                </div>
+                <div className="positions">
+                    <h3>Software Engineer</h3>
+                    <h3>Product Manager</h3>
+                </div>
             </div>
             <div className="mainContent">
                 <div className="socialMedia">
@@ -32,7 +36,6 @@ function Landing() {
                     <a href="https://codesandbox.io/u/jdevenish"><span className="iconify" data-icon="cib:codesandbox" data-inline="false"/></a>
                     <a href="https://repl.it/@jdevenish"><span className="iconify" data-icon="simple-icons:repl-dot-it" data-inline="false"/></a>
                 </div>
-
                 <div className="emailAddress">
                     <a href="mailto:justin.devenish@gmail.com">justin.devenish@gmail.com</a>
                 </div>
@@ -40,7 +43,6 @@ function Landing() {
             <div className="terminal--container">
                 <Terminal/>
             </div>
-
         </div>
     );
 }

@@ -41,7 +41,7 @@ function Terminal() {
                 <div className="term--body--height">
                     {terminalCommands}
                     <div
-                        style={{ animationDelay: '10s' }}
+                        style={{ animationDelay: '22s' }}
                         className="input-prompt-final">
                         <p>justin-devenish.com %</p>
                     </div>

@@ -1,6 +1,6 @@
 @import "./config";
 
-.name-and-title {
+.name-and-positions {
   width: 95vw;
   height: auto;
   margin: 0 auto;
@@ -24,7 +24,47 @@
     padding-top: 15px;
     color: whitesmoke;
   }
+
+  .name {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    animation-name: render-name;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+
+    @keyframes render-name {
+      0% { left: -100vw; bottom: 0; }
+      25% { left: 25px; bottom: 0; }
+      50% { left: -15px; bottom: 0; }
+      75% { left: 10px; bottom: 0; }
+      85% { left: -5px; bottom: 0; }
+      100% { left: 0; bottom: 0; }
+    }
+  }
+
+  .positions {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    animation-name: render-positions;
+    animation-duration: 3s;
+    animation-delay: 7.3s;
+    animation-fill-mode: backwards;
+
+    @keyframes render-positions {
+      0% { left: 100vw; bottom: 0; }
+      25% { left: 25px; bottom: 0; }
+      50% { left: -15px; bottom: 0; }
+      75% { left: 10px; bottom: 0; }
+      85% { left: -5px; bottom: 0; }
+      100% { left: 0px; bottom: 0; }
+    }
+  }
 }
+
+
 
 .emailAddress {
   position: relative;
@@ -38,7 +78,7 @@
   z-index: 1;
   animation-name: render-email;
   animation-duration: 3s;
-  animation-delay: 9350ms;
+  animation-delay: 18s;
   animation-fill-mode: backwards;
 
   a {
@@ -71,7 +111,7 @@
   bottom: 0;
   animation-name: render-socialMedia;
   animation-duration: 3s;
-  animation-delay: 0s;
+  animation-delay: 13s;
   animation-fill-mode: backwards;
 
   .iconify {
@@ -92,7 +132,7 @@
 }
 
 @media only screen and (min-device-width: 768px) {
-  .name-and-title {
+  .name-and-positions {
     width: 75vw;
 
     h1 {
@@ -138,7 +178,7 @@
 }
 
 @media only screen and (min-device-width: 1024px) {
-  .name-and-title {
+  .name-and-positions {
     padding-bottom: 75px;
 
     h1 {

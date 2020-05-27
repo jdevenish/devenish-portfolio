@@ -14,7 +14,7 @@ function TerminalText({ command, index }) {
     const outputCommands = command.output.map((output, outIndex) => {
         const noBreak =
             <Fragment key={outIndex}>
-                <div style={{animationDelay: `${((index+1)*2300)+(outIndex*50)}ms`}}
+                <div style={{animationDelay: `${((index+1)*2300)+(index*3000)+(outIndex*50)}ms`}}
                      className="output-command">
                     <p>{output}</p>
                 </div>
@@ -22,7 +22,7 @@ function TerminalText({ command, index }) {
 
         const addBreak =
             <Fragment key={outIndex}>
-                <div style={{ animationDelay: `${((index+1)*2300)+(outIndex*50)}ms` }}
+                <div style={{ animationDelay: `${((index+1)*2500)+(index*3000)+(outIndex*50)}ms` }}
                      className="output-command__with-br">
                     <p>{output}</p>
                     <br/>
@@ -36,14 +36,14 @@ function TerminalText({ command, index }) {
         <>
             <div className="input-line">
                 <div
-                    style={{ animationDelay: `${(index*2500)+100}ms` }}
+                    style={{ animationDelay: `${(index*5500)+100}ms` }}
                     className="input-prompt">
                     <p>justin-devenish.com %</p>
                 </div>
                 <div
                     style={{
                         animationTimingFunction: `steps(${command.input.length * 2}, end)`,
-                        animationDelay: `${(index*2500)+250}ms`
+                        animationDelay: `${(index*5500)+250}ms`
                     }}
                     className="input-command">
                     <p key={index}>{command.input}</p>
