@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/devenish-portfolio.iml" filepath="$PROJECT_DIR$/.idea/devenish-portfolio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../devenish-portfolio-BE/.idea/devenish-portfolio-BE.iml" filepath="$PROJECT_DIR$/../devenish-portfolio-BE/.idea/devenish-portfolio-BE.iml" />
     </modules>
   </component>
 </project>

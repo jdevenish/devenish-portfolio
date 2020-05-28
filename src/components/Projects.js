@@ -9,14 +9,16 @@ import Project from "./Project";
  */
 import '../scss/Projects.scss'
 
-function Projects() {
+function Projects({ projects }) {
+
+    console.log(projects);
 
     return (
         <div className="projects-container">
             <div className="projects--header">
                 <h1>PROJECTS</h1>
             </div>
-            
+
         </div>
     );
 }
