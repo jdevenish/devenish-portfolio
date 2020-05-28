@@ -131,7 +131,7 @@ p {
 
     @keyframes command-scroll {
       from { height: 0; }
-      to { height: 16px; }
+      to { height: 18px; }
     }
   }
 
@@ -178,6 +178,7 @@ p {
   }
 
   .output-command {
+    height: 18px;
 
     p {
       font-size: 16px;

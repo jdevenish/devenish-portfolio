@@ -7,7 +7,8 @@ import React from 'react';
  * Component Imports
  */
 import Landing from './components/Landing';
-
+import Projects from "./components/Projects";
+import About from "./components/About";
 /*
  * CSS Imports
  */
@@ -18,9 +19,8 @@ function App() {
   return (
       <>
         <Landing/>
-        <div className="filler">
-
-        </div>
+        <Projects/>
+        <About/>
       </>
   );
 }
