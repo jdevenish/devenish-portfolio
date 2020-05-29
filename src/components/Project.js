@@ -71,7 +71,6 @@ function Project( { project } ) {
                     </Carousel>
                 </div>
                 <div className="project--details">
-
                     <div>
                         <h3>Tech Stack</h3>
                     </div>
@@ -84,7 +83,7 @@ function Project( { project } ) {
                     </div>
                     <div className="btns--container">
                         <button className="btn btn-primary btn--style">Live Site</button>
-                        <button  className="btn btn-primary btn--style">GitHub Repo</button>
+                        {project.showRepo ? <button  className="btn btn-primary btn--style ">GitHub Repo</button> : ""}
                     </div>
                 </div>
 
