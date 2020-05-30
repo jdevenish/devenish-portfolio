@@ -136,7 +136,7 @@
   }
 }
 
-@media only screen and (min-device-width: 768px) {
+@media (min-width: 768px) {
   .name-and-positions {
     width: 75vw;
 
@@ -183,7 +183,7 @@
   }
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .name-and-positions {
     padding-bottom: 75px;
 

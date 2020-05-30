@@ -26,13 +26,13 @@
 }
 
 
-@media only screen and (min-device-width: 768px) {
+@media (min-width: 768px) {
   .about-container {
 
   }
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .about-container {
     .about-description {
       width: 900px;

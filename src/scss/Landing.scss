@@ -28,7 +28,7 @@
   background-color: lightgrey;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media (min-width: 768px) {
   .landing{
     background-image: url($tablet);
 
@@ -41,7 +41,7 @@
 
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media (min-width: 1024px) {
   .landing{
     background-image: url($desktop);
 
