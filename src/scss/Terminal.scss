@@ -104,7 +104,7 @@
   }
 }
 
-@media only screen and (min-device-width: 768px) {
+@media (min-width: 768px) {
   .terminal {
     width: 73vw;
     height: 550px;

@@ -21,13 +21,13 @@ function Landing() {
     return (
         <div className="landing">
             <div className="name-and-positions">
-                {/*<div className="name">*/}
-                {/*    <h1>Justin Devenish</h1>*/}
-                {/*</div>*/}
-                {/*<div className="positions">*/}
-                {/*    <h3>Software Engineer</h3>*/}
-                {/*    <h3>Product Manager</h3>*/}
-                {/*</div>*/}
+                <div className="name">
+                    <h1>Justin Devenish</h1>
+                </div>
+                <div className="positions">
+                    <h3>Software Engineer</h3>
+                    <h3>Product Manager</h3>
+                </div>
             </div>
             <div className="mainContent">
                 <div className="socialMedia">
