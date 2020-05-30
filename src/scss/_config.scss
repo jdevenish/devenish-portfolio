@@ -27,7 +27,7 @@ $desktop: "https://res.cloudinary.com/doaftkgbv/image/upload/v1590434978/desktop
 $profile-pic: "https://res.cloudinary.com/doaftkgbv/image/upload/v1590433650/PersonalProfile_tmriaj.png";
 
 /*
- * Mixins
+ * Animation Mixins
  */
 @mixin animation-name($name) {
   -webkit-animation-name: $name;
@@ -94,3 +94,21 @@ $profile-pic: "https://res.cloudinary.com/doaftkgbv/image/upload/v1590433650/Per
     100% { left: 0; bottom: 0; }
   }
 }
+
+/*
+ * BackgroundImage Mixins
+ */
+@mixin background-size($behavior) {
+  -webkit-background-size: $behavior;
+  -moz-background-size: $behavior;
+  -o-background-size: $behavior;
+  background-size: $behavior;
+}
+
+//@mixin background-position($position) {
+//  -webkit-background-position: $position;
+//  -moz-background-position: $position;
+//  -o-background-position: $position;
+//  background-position: $position;
+//}
+
