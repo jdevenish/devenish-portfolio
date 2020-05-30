@@ -5,8 +5,9 @@
   //background-repeat: no-repeat;
   @include background-size(cover);
   background-position: center;
-  //background-attachment: fixed;
+  background-attachment: fixed;
   height: 100vh;
+  //max-height: 100%;
 
   .mainContent{
     display: flex;
