@@ -8,9 +8,9 @@ p {
 }
 
 .output-command {
-  //animation-name: command-scroll;
-  //animation-duration: 10ms;
-  //animation-fill-mode: backwards;
+  animation-name: command-scroll;
+  animation-duration: 10ms;
+  animation-fill-mode: backwards;
   overflow: hidden;
   height: 15px;
   width: 100%;
@@ -27,9 +27,9 @@ p {
 }
 
 .output-command__with-br {
-  //animation-name: command-scroll__with-br;
-  //animation-duration: 10ms;
-  //animation-fill-mode: backwards;
+  animation-name: command-scroll__with-br;
+  animation-duration: 10ms;
+  animation-fill-mode: backwards;
   overflow: hidden;
   height: 30px;
   width: 100%;
@@ -53,9 +53,9 @@ p {
   .input-prompt {
     color: white;
     white-space: nowrap;
-    //animation-name: command-prompt;
-    //animation-fill-mode: backwards;
-    //animation-duration: 1ms;
+    animation-name: command-prompt;
+    animation-fill-mode: backwards;
+    animation-duration: 1ms;
 
     p {
       font-weight: 900;
@@ -70,9 +70,9 @@ p {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    //animation:
-    //  command-typewriter 1.5s backwards,
-    //  command-typewriter-height 1ms backwards;
+    animation:
+      command-typewriter 1.5s backwards,
+      command-typewriter-height 1ms backwards;
 
     p {
       font-size: 12px;
@@ -100,7 +100,7 @@ p {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
-  //animation: command-prompt-final 1ms 1 backwards;
+  animation: command-prompt-final 1ms 1 backwards;
 
   p {
     font-weight: 900;

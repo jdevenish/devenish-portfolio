@@ -2,9 +2,6 @@
 
 .name-and-positions {
   position: relative;
-  left: 0;
-  top: 0;
-  //width: 95vw;
   height: auto;
   margin: 0 auto;
   padding-bottom: 75px;
@@ -24,24 +21,24 @@
     position: relative;
     left: 0;
     bottom: 0;
-    //@include animation-name(render-name);
-    //@include animation-duration(3s);
-    //@include animation-delay(2.5s);
-    //@include animation-fill-mode(backwards);
-    //overflow: hidden;
-    //
-    //@include render-name;
+    @include animation-name(render-name);
+    @include animation-duration(3s);
+    @include animation-delay(2.5s);
+    @include animation-fill-mode(backwards);
+    overflow: hidden;
+
+    @include render-name;
   }
 
   .positions {
     position: relative;
     left: 0;
     bottom: 0;
-    //animation-name: render-positions;
-    //animation-duration: 3s;
-    //animation-delay: 7.3s;
-    //animation-fill-mode: backwards;
-    //overflow: hidden;
+    animation-name: render-positions;
+    animation-duration: 3s;
+    animation-delay: 7.3s;
+    animation-fill-mode: backwards;
+    overflow: hidden;
     padding-top: 15px;
 
     h3 {
