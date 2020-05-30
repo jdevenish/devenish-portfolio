@@ -22,7 +22,7 @@ function Landing() {
         <div className="landing">
             <div className="name-and-positions">
                 <div className="name">
-                    <h1>Justin Devenish</h1>
+                    {/*<h1>Justin Devenish</h1>*/}
                 </div>
                 <div className="positions">
                     <h3>Software Engineer</h3>
