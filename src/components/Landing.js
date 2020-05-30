@@ -29,20 +29,20 @@ function Landing() {
             {/*        <h3>Product Manager</h3>*/}
             {/*    </div>*/}
             {/*</div>*/}
-            <div className="mainContent">
-                <div className="socialMedia">
-                    <a href="https://www.linkedin.com/in/justin-devenish/"><span className="iconify" data-icon="brandico:linkedin-rect" data-inline="false"/></a>
-                    <a href="https://github.com/"><span className="iconify" data-icon="fa:github-square" data-inline="false"/></a>
-                    <a href="https://codesandbox.io/u/jdevenish"><span className="iconify" data-icon="cib:codesandbox" data-inline="false"/></a>
-                    <a href="https://repl.it/@jdevenish"><span className="iconify" data-icon="simple-icons:repl-dot-it" data-inline="false"/></a>
-                </div>
-                <div className="emailAddress">
-                    <a href="mailto:justin.devenish@gmail.com">justin.devenish@gmail.com</a>
-                </div>
-            </div>
-            <div className="terminal--container">
-                <Terminal/>
-            </div>
+            {/*<div className="mainContent">*/}
+            {/*    <div className="socialMedia">*/}
+            {/*        <a href="https://www.linkedin.com/in/justin-devenish/"><span className="iconify" data-icon="brandico:linkedin-rect" data-inline="false"/></a>*/}
+            {/*        <a href="https://github.com/"><span className="iconify" data-icon="fa:github-square" data-inline="false"/></a>*/}
+            {/*        <a href="https://codesandbox.io/u/jdevenish"><span className="iconify" data-icon="cib:codesandbox" data-inline="false"/></a>*/}
+            {/*        <a href="https://repl.it/@jdevenish"><span className="iconify" data-icon="simple-icons:repl-dot-it" data-inline="false"/></a>*/}
+            {/*    </div>*/}
+            {/*    <div className="emailAddress">*/}
+            {/*        <a href="mailto:justin.devenish@gmail.com">justin.devenish@gmail.com</a>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            {/*<div className="terminal--container">*/}
+            {/*    <Terminal/>*/}
+            {/*</div>*/}
         </div>
     );
 }
