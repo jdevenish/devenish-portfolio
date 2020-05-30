@@ -2,13 +2,13 @@
 
 .landing{
   background-image: url($mobile);
-  background-repeat: no-repeat;
+  //background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  //background-position: center;
+  //background-attachment: fixed;
   height: 100vh;
 
   .mainContent{
