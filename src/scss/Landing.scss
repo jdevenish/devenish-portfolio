@@ -2,12 +2,11 @@
 
 .landing{
   background-image: url($mobile);
-  //background-repeat: no-repeat;
+  background-repeat: no-repeat;
   @include background-size(cover);
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: 100vh;
-  //max-height: 100%;
 
   .mainContent{
     display: flex;
@@ -32,6 +31,7 @@
 @media (min-width: 768px) {
   .landing{
     background-image: url($tablet);
+    background-attachment: fixed;
 
     .terminal--container {
       left: 16px;
