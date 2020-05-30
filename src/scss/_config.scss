@@ -25,3 +25,72 @@ $desktop: "https://res.cloudinary.com/doaftkgbv/image/upload/v1590434978/desktop
  * Profile Pic URL
  */
 $profile-pic: "https://res.cloudinary.com/doaftkgbv/image/upload/v1590433650/PersonalProfile_tmriaj.png";
+
+/*
+ * Mixins
+ */
+@mixin animation-name($name) {
+  -webkit-animation-name: $name;
+  -moz-animation-name: $name;
+  -o-animation-name: $name;
+  animation-name: $name;
+}
+
+@mixin animation-duration($time) {
+  -webkit-animation-duration: $time;
+  -moz-animation-duration: $time;
+  -o-animation-duration: $time;
+  animation-duration: $time;
+}
+
+@mixin animation-delay($time) {
+  -webkit-animation-delay: $time;
+  -moz-animation-delay: $time;
+  -o-animation-delay: $time;
+  animation-delay: $time;
+}
+
+@mixin animation-fill-mode($mode) {
+  -webkit-animation-fill-mode: $mode;
+  -moz-animation-fill-mode: $mode;
+  -o-animation-fill-mode: $mode;
+  animation-fill-mode: $mode;
+}
+
+@mixin render-name() {
+  @-webkit-keyframes render-name {
+    0% { left: -100vw; bottom: 0; }
+    25% { left: 25px; bottom: 0; }
+    50% { left: -15px; bottom: 0; }
+    75% { left: 10px; bottom: 0; }
+    85% { left: -5px; bottom: 0; }
+    100% { left: 0; bottom: 0; }
+  }
+
+  @-moz-keyframes render-name {
+    0% { left: -100vw; bottom: 0; }
+    25% { left: 25px; bottom: 0; }
+    50% { left: -15px; bottom: 0; }
+    75% { left: 10px; bottom: 0; }
+    85% { left: -5px; bottom: 0; }
+    100% { left: 0; bottom: 0; }
+  }
+
+  @-o-keyframes render-name {
+    0% { left: -100vw; bottom: 0; }
+    25% { left: 25px; bottom: 0; }
+    50% { left: -15px; bottom: 0; }
+    75% { left: 10px; bottom: 0; }
+    85% { left: -5px; bottom: 0; }
+    100% { left: 0; bottom: 0; }
+  }
+
+  @keyframes render-name {
+    0% { left: -100vw; bottom: 0; }
+    25% { left: 25px; bottom: 0; }
+    50% { left: -15px; bottom: 0; }
+    75% { left: 10px; bottom: 0; }
+    85% { left: -5px; bottom: 0; }
+    100% { left: 0; bottom: 0; }
+  }
+}
