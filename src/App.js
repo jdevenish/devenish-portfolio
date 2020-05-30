@@ -33,7 +33,7 @@ function App() {
       <>
         <Landing/>
         <Projects projects={projects}/>
-        <About projects={projects}/>
+        {/*<About projects={projects}/>*/}
       </>
   );
 }

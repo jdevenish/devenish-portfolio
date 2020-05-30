@@ -1,10 +1,12 @@
 @import "./config";
 
 .name-and-positions {
-  width: 95vw;
+  position: relative;
+  //width: 95vw;
   height: auto;
   margin: 0 auto;
   padding-bottom: 75px;
+  overflow: hidden;
 
   h1 {
     font-family: 'Roboto Condensed', sans-serif;
@@ -13,7 +15,7 @@
     text-align: center;
     padding-top: 25px;
     color: white;
-    text-shadow: 0px 1px 7px $neon-orange;
+    text-shadow: 0 1px 7px $neon-orange;
   }
 
   h3 {
@@ -33,6 +35,7 @@
     animation-duration: 3s;
     animation-delay: 2.5s;
     animation-fill-mode: backwards;
+    overflow: hidden;
 
     @keyframes render-name {
       0% { left: -100vw; bottom: 0; }
@@ -52,6 +55,7 @@
     animation-duration: 3s;
     animation-delay: 7.3s;
     animation-fill-mode: backwards;
+    overflow: hidden;
 
     @keyframes render-positions {
       0% { left: 100vw; bottom: 0; }
@@ -59,7 +63,7 @@
       50% { left: -15px; bottom: 0; }
       75% { left: 10px; bottom: 0; }
       85% { left: -5px; bottom: 0; }
-      100% { left: 0px; bottom: 0; }
+      100% { left: 0; bottom: 0; }
     }
   }
 }
@@ -80,6 +84,7 @@
   animation-duration: 3s;
   animation-delay: 18s;
   animation-fill-mode: backwards;
+  overflow: hidden;
 
   a {
     transform: rotate(90deg);
