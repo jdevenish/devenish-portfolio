@@ -3,7 +3,9 @@
 .landing{
   background-image: url($mobile);
   background-repeat: no-repeat;
-  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

@@ -20,15 +20,15 @@ function Landing() {
 
     return (
         <div className="landing">
-            {/*<div className="name-and-positions">*/}
-            {/*    <div className="name">*/}
-            {/*        <h1>Justin Devenish</h1>*/}
-            {/*    </div>*/}
-            {/*    <div className="positions">*/}
-            {/*        <h3>Software Engineer</h3>*/}
-            {/*        <h3>Product Manager</h3>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+            <div className="name-and-positions">
+                <div className="name">
+                    <h1>Justin Devenish</h1>
+                </div>
+                <div className="positions">
+                    <h3>Software Engineer</h3>
+                    <h3>Product Manager</h3>
+                </div>
+            </div>
             <div className="mainContent">
                 <div className="socialMedia">
                     <a href="https://www.linkedin.com/in/justin-devenish/"><span className="iconify" data-icon="brandico:linkedin-rect" data-inline="false"/></a>
