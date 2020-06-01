@@ -4,15 +4,28 @@
   height: 100%;
   background-color: $project-background;
   margin: 0 auto;
+  padding-bottom: 25px;
+
+  .about-description {
+    width: 90vw;
+    margin: 0 20px;
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 11.5pt;
+      text-align: left;
+      color: white;
+    }
+  }
 
   .about-content {
     padding-top: 50px;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
 
     .image-container {
-      //margin: 0 auto;
+      margin: 0 auto;
     }
 
     .profile-pic {
@@ -23,40 +36,99 @@
     }
 
   }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin: 20px 20px 0 20px;
+      color: black;
+
+      .iconify {
+        width: 75px;
+        height: 50px;
+      }
+    }
+  }
 }
 
 
 @media (min-width: 768px) {
   .about-container {
+    padding-bottom: 75px;
 
+    .about-description p {
+      font-size: 12.5pt;
+    }
+
+    .about-content {
+      .image-container {
+        margin-bottom: 20px;
+      }
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+
+      a {
+        margin: 20px 20px 0 20px;
+        color: black;
+
+        .iconify {
+          width: 150px;
+          height: 50px;
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 1024px) {
   .about-container {
-    .about-description {
-      width: 900px;
-      margin: 0 20px;
 
-      p {
-        font-family: 'Roboto', sans-serif;
-        font-size: 13.5pt;
-        text-align: left;
-        color: white;
+    .about-content {
+      padding-top: 50px;
+      flex-direction: row;
+
+      .image-container {
+        margin: 0;
+      }
+
+      .profile-pic {
+        height: 290px;
+        width: 290px;
+        object-fit: contain;
+        border-radius: 15px;
+      }
+
+      .about-description {
+        width: 900px;
+        margin: 0 20px;
+
+        p {
+          font-family: 'Roboto', sans-serif;
+          font-size: 13.5pt;
+          text-align: left;
+          color: white;
+        }
       }
     }
+
     .contact {
       display: flex;
-      flex-direction: row;
       justify-content: center;
-    }
-    .iconify {
-      height: 64px;
-      width: 125px;
-      margin: 10px 20px 15px 20px;
-    }
-    .resume {
 
+      a {
+        margin: 20px 20px 0 20px;
+        color: black;
+
+        .iconify {
+          width: 150px;
+          height: 50px;
+        }
+      }
     }
   }
 }

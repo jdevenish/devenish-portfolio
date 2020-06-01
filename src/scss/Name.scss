@@ -4,7 +4,7 @@
   position: relative;
   height: auto;
   margin: 0 auto;
-  padding-bottom: 75px;
+  padding-bottom: 35px;
   overflow: hidden;
 
   h1 {
@@ -128,14 +128,15 @@
 
 @media (min-width: 768px) {
   .name-and-positions {
+    padding-bottom: 65px;
     width: 75vw;
 
     h1 {
       font-size: 60pt;
     }
 
-    h3 {
-      font-size: 25pt;
+    .positions h3 {
+      font-size: 23pt;
     }
   }
 
@@ -179,6 +180,10 @@
 
     h1 {
       font-size: 70pt;
+    }
+
+    .positions h3 {
+      font-size: 30pt;
     }
   }
 
