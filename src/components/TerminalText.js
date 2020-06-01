@@ -34,7 +34,9 @@ function TerminalText({ command, index }) {
 
     return (
         <>
-            <div className="input-line">
+            <div
+                style={{ animationDelay: `${(index*5500)+50}ms` }}
+                className="input-line">
                 <div
                     style={{ animationDelay: `${(index*5500)+100}ms` }}
                     className="input-prompt">

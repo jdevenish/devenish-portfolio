@@ -85,17 +85,15 @@
   background-color: $terminal-body;
   opacity: .8;
   border-radius: 0 0 10px 10px;
-  display: flex;
-  flex-direction: column-reverse;
   overflow-y: auto;
-  justify-content: stretch;
-  align-self: stretch;
-  align-content: stretch;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  min-height: 0;
 
   .term--body--height {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 
   }
 
@@ -122,7 +120,7 @@
 @media (min-width: 1024px) {
   .terminal {
     width: 60vw;
-    height: 550px;
+    height: 450px;
   }
 
   .terminal--header {
@@ -140,12 +138,7 @@
   .terminal--body {
 
     .term--body--height {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-self: stretch;
-      align-items: stretch;
-      align-content: stretch;
+
     }
   }
 }
