@@ -56,11 +56,13 @@
         font-size: 13pt;
         text-align: center;
         color: white;
+
       }
 
       .techStack--icons {
         display: flex;
         justify-content: space-around;
+        align-items: center;
 
         .iconify {
           height: 38px;
@@ -209,7 +211,7 @@
       }
 
       .description {
-
+        margin-top: 5px;
         p {
           font-size: 12pt;
           height: 200px;
