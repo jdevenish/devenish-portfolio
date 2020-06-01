@@ -47,9 +47,9 @@ function About( { projects } ) {
                </div>
             </div>
            <div className="contact">
-               <a href="https://www.linkedin.com/in/justin-devenish/" target="_blank"><span className="iconify" title="LinkedIn" data-icon="logos:linkedin" data-inline="false"/></a>
-               <a href="https://github.com/jdevenish" target="_blank"><span className="iconify" title="GitHub" data-icon="logos:github" data-inline="false"/></a>
-               <a href="https://drive.google.com/file/d/1lHAdcPsgu0nSZvBqYso0nO6D_CJ7sxjZ/view?usp=sharing" target="_blank"><span className="iconify" title="Resume" data-icon="bx:bxs-file-pdf" data-inline="false"/></a>
+               <a href="https://www.linkedin.com/in/justin-devenish/" target="_blank" rel="noopener noreferrer"><span className="iconify" title="LinkedIn" data-icon="logos:linkedin" data-inline="false"/></a>
+               <a href="https://github.com/jdevenish" target="_blank" rel="noopener noreferrer"><span className="iconify" title="GitHub" data-icon="logos:github" data-inline="false"/></a>
+               <a href="https://drive.google.com/file/d/1lHAdcPsgu0nSZvBqYso0nO6D_CJ7sxjZ/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span className="iconify" title="Resume" data-icon="bx:bxs-file-pdf" data-inline="false"/></a>
            </div>
        </div>
     );
