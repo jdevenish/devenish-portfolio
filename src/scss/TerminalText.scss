@@ -14,6 +14,7 @@ p {
   overflow: hidden;
   height: 15px;
   width: 100%;
+  height: 100%;
 
   p {
     font-size: 12px;
@@ -30,6 +31,7 @@ p {
   overflow: hidden;
   height: 30px;
   width: 100%;
+  height: 100%;
 
   p {
     font-size: 12px;
@@ -43,6 +45,7 @@ p {
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
+  height: 100%;
 
   .input-prompt {
     color: white;
@@ -83,7 +86,8 @@ p {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
-  animation: command-prompt-final 1ms 1 backwards;
+  height: 100%;
+  @include animation(command-prompt-final, 1ms, backwards);
 
   p {
     font-weight: 900;
@@ -152,7 +156,7 @@ p {
   }
 
   .output-command {
-    height: 22px;
+    //height: 26px;
 
     p {
       font-size: 16px;
@@ -162,6 +166,8 @@ p {
   }
 
   .output-command__with-br {
+    //height: 26px;
+
     p {
       font-size: 16px;
     }
@@ -169,7 +175,8 @@ p {
     @include command-scroll__with-br(0, 36px);
   }
 
-  .input-prompt-final p {
+  .input-prompt-final {
+    //height: 26px;
     p {
       font-size: 18px;
     }

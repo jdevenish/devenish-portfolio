@@ -227,7 +227,12 @@ $profile-pic: "https://res.cloudinary.com/doaftkgbv/image/upload/v1590433650/Per
   }
 }
 
-
+@mixin animation($name, $time, $mode) {
+  -webkit-animation: $name $time $mode;
+  -moz-animation: $name $time $mode;
+  -o-animation: $name $time $mode;
+  animation: $name $time $mode;
+}
 
 /*
  * BackgroundImage Mixins
