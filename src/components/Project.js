@@ -82,8 +82,8 @@ function Project( { project } ) {
                         <p>{project.description}</p>
                     </div>
                     <div className="btns--container">
-                        <button className="btn btn-primary btn--style">Live Site</button>
-                        {project.showRepo ? <button  className="btn btn-primary btn--style ">GitHub Repo</button> : ""}
+                        <a href={project.liveURL} target="_blank"><button className="btn btn-primary btn--style">Live Site</button></a>
+                        {project.showRepo ? <a href={project.repoURL} target="_blank"><button  className="btn btn-primary btn--style ">GitHub Repo</button></a> : ""}
                     </div>
                 </div>
 
