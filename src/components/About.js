@@ -9,20 +9,6 @@ import React, {useState} from 'react';
 import '../scss/About.scss'
 
 function About( { projects } ) {
-    // let iconsArr = [];
-    // projects.forEach(project => {
-    //     project.techStack.forEach(icon => {
-    //         if(!iconsArr.includes(icon)){
-    //             iconsArr.push(icon)
-    //         }
-    //     })
-    // });
-    //
-    // const techStackIconsArr = iconsArr.map(icon => {
-    //     return(
-    //         <span className="iconify" data-icon={icon.dataIcon} data-inline="false"/>
-    //     )
-    // });
 
     return (
        <div className="about-container">
