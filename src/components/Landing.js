@@ -13,11 +13,8 @@ import Terminal from "./Terminal";
  * CSS Files
  */
 import '../scss/Landing.scss'
-import '../scss/Name.scss'
-
 
 function Landing() {
-
     return (
         <div className="landing">
             <div className="name-and-positions">
