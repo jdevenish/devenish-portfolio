@@ -1,6 +1,6 @@
 @import "./config";
 
-.landing{
+.landing {
   background-image: url($mobile);
   background-repeat: no-repeat;
   @include background-size(cover);
@@ -8,14 +8,14 @@
   background-attachment: scroll;
   height: 100vh;
 
-  .mainContent{
+  .mainContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
   }
 
-  .terminal--container{
+  .terminal--container {
     position: relative;
     left: 0;
     top: -185px;
@@ -23,13 +23,8 @@
   }
 }
 
-.filler{
-  height: 200vh;
-  background-color: lightgrey;
-}
-
 @media (min-width: 768px) {
-  .landing{
+  .landing {
     background-image: url($tablet);
     background-attachment: fixed;
 

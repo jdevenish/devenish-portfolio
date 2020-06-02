@@ -7,39 +7,39 @@
   padding-bottom: 35px;
   overflow: hidden;
 
-  h1 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 35pt;
-    font-weight: 700;
-    text-align: center;
-    padding-top: 25px;
-    color: white;
-    text-shadow: 0 1px 7px $neon-orange;
-  }
-
   .name {
     position: relative;
     left: 0;
     bottom: 0;
+    overflow: hidden;
     @include animation-name(render-name);
     @include animation-duration(3s);
     @include animation-delay(2.5s);
     @include animation-fill-mode(backwards);
-    overflow: hidden;
-
     @include render-name;
+
+    h1 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 35pt;
+      font-weight: 700;
+      text-align: center;
+      padding-top: 25px;
+      color: white;
+      text-shadow: 0 1px 7px $neon-orange;
+    }
   }
 
   .positions {
     position: relative;
     left: 0;
     bottom: 0;
-    animation-name: render-positions;
-    animation-duration: 3s;
-    animation-delay: 7.3s;
-    animation-fill-mode: backwards;
     overflow: hidden;
     padding-top: 15px;
+    @include animation-name(render-positions);
+    @include animation-duration(3s);
+    @include animation-delay(7.3s);
+    @include animation-fill-mode(backwards);
+    @include render-positions(100vw, 25px, -15px, 10px, -5px, 0);
 
     h3 {
       font-family: 'Roboto', sans-serif;
@@ -48,15 +48,6 @@
       text-align: center;
       color: whitesmoke;
     }
-
-    @keyframes render-positions {
-      0% { left: 100vw; bottom: 0; }
-      25% { left: 25px; bottom: 0; }
-      50% { left: -15px; bottom: 0; }
-      75% { left: 10px; bottom: 0; }
-      85% { left: -5px; bottom: 0; }
-      100% { left: 0; bottom: 0; }
-    }
   }
 }
 
@@ -64,17 +55,25 @@
   position: relative;
   display: inline-block;
   height: 32px;
+  width: 336px;
   left: 131px;
   bottom: -94px;
+  overflow: hidden;
   text-align: center;
   transform: rotate(90deg);
-  width: 336px;
   z-index: 1;
-  animation-name: render-email;
-  animation-duration: 3s;
-  animation-delay: 18s;
-  animation-fill-mode: backwards;
-  overflow: hidden;
+  @include animation-name(render-email);
+  @include animation-duration(3s);
+  @include animation-delay(18s);
+  @include animation-fill-mode(backwards);
+  @include keyframes(render-email) {
+    0% { left: 131px; bottom: 700px; }
+    25% { left: 131px; bottom: -120px; }
+    50% { left: 131px; bottom: -70px; }
+    75% { left: 131px; bottom: -94px; }
+    85% { left: 131px; bottom: -80px; }
+    100% { left: 131px; bottom: -94px; }
+  }
 
   a {
     transform: rotate(90deg);
@@ -83,15 +82,6 @@
     color: $neon-blue;
     text-decoration: none;
     text-align: center;
-  }
-
-  @keyframes render-email {
-    0% { left: 131px; bottom: 700px; }
-    25% { left: 131px; bottom: -120px; }
-    50% { left: 131px; bottom: -70px; }
-    75% { left: 131px; bottom: -94px; }
-    85% { left: 131px; bottom: -80px; }
-    100% { left: 131px; bottom: -94px; }
   }
 }
 

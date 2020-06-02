@@ -8,7 +8,7 @@ import React, {useState} from 'react';
  */
 import '../scss/About.scss'
 
-function About( { projects } ) {
+function About() {
 
     return (
        <div className="about-container">

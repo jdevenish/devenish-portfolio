@@ -234,6 +234,56 @@ $profile-pic: "https://res.cloudinary.com/doaftkgbv/image/upload/v1590433650/Per
   animation: $name $time $mode;
 }
 
+@mixin render-positions($percent-0, $percent-25, $percent-50, $percent-75, $percent-85, $percent-100) {
+  @-webkit-keyframes render-positions {
+    0% { left: $percent-0; bottom: 0; }
+    25% { left: $percent-25; bottom: 0; }
+    50% { left: $percent-50; bottom: 0; }
+    75% { left: $percent-75; bottom: 0; }
+    85% { left: $percent-85; bottom: 0; }
+    100% { left: $percent-100; bottom: 0; }
+  }
+
+  @-moz-keyframes render-positions {
+    0% { left: $percent-0; bottom: 0; }
+    25% { left: $percent-25; bottom: 0; }
+    50% { left: $percent-50; bottom: 0; }
+    75% { left: $percent-75; bottom: 0; }
+    85% { left: $percent-85; bottom: 0; }
+    100% { left: $percent-100; bottom: 0; }
+  }
+
+  @-o-keyframes render-positions {
+    0% { left: $percent-0; bottom: 0; }
+    25% { left: $percent-25; bottom: 0; }
+    50% { left: $percent-50; bottom: 0; }
+    75% { left: $percent-75; bottom: 0; }
+    85% { left: $percent-85; bottom: 0; }
+    100% { left: $percent-100; bottom: 0; }
+  }
+
+  @keyframes render-positions {
+    0% { left: $percent-0; bottom: 0; }
+    25% { left: $percent-25; bottom: 0; }
+    50% { left: $percent-50; bottom: 0; }
+    75% { left: $percent-75; bottom: 0; }
+    85% { left: $percent-85; bottom: 0; }
+    100% { left: $percent-100; bottom: 0; }
+  }
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
 /*
  * BackgroundImage Mixins
  */
