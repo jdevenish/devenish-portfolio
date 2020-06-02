@@ -7,63 +7,63 @@ p {
 }
 
 .output-command {
+  height: 15px;
+  width: 100%;
+  overflow: hidden;
   @include animation-name(command-scroll);
   @include animation-duration(10ms);
   @include animation-fill-mode(backwards);
-  overflow: hidden;
-  height: 15px;
-  width: 100%;
+  @include keyframes(command-scroll) {
+    from { height: 0; }
+    to { height: 15px; }
+  }
 
   p {
     font-size: 12px;
     margin-bottom: 0;
   }
-
-  @include command-scroll(0, 15px);
 }
 
 .output-command__with-br {
+  height: 30px;
+  width: 100%;
+  overflow: hidden;
   @include animation-name(command-scroll__with-br);
   @include animation-duration(10ms);
   @include animation-fill-mode(backwards);
-  overflow: hidden;
-  height: 30px;
-  width: 100%;
+  @include keyframes(command-scroll__with-br) {
+    from { height: 0; }
+    to { height: 30px; }
+  }
 
   p {
     font-size: 12px;
     margin-bottom: 0;
   }
-
-  @include command-scroll__with-br(0, 30px);
 }
 
 .input-line {
-  display: -webkit-flex;
   display: flex;
-
-  -webkit-flex-direction: row;
   flex-direction: row;
-
-  -webkit-justify-content: flex-start;
   justify-content: flex-start;
   width: 100%;
-  overflow: hidden;
   height: 27px;
-  animation: command-line 1ms backwards;
-
-  @keyframes command-line {
+  overflow: hidden;
+  @include animation(command-line, 1ms, backwards);
+  @include keyframes(command-line) {
     from { height: 0; }
     to { height: 27px; }
   }
-
 
   .input-prompt {
     color: white;
     white-space: nowrap;
     @include animation-name(command-prompt);
     @include animation-fill-mode(backwards);
-    //@include animation-delay(1ms);
+    @include keyframes(command-prompt) {
+      from { width: 0; height: 0; }
+      to { width: 100%; height: 16px; }
+    }
 
     p {
       font-weight: 900;
@@ -78,12 +78,8 @@ p {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    -webkit-animation:
-            command-typewriter 1.5s backwards,
-            command-typewriter-height 1ms backwards;
-    animation:
-      command-typewriter 1.5s backwards,
-      command-typewriter-height 1ms backwards;
+    @include animation(command-typewriter, 1.5s, backwards);
+    @include animation(command-typewriter-height, 1ms, backwards);
 
     p {
       font-size: 12px;
@@ -91,9 +87,15 @@ p {
     }
   }
 
-  @include command-prompt(0,0, 100%, 16px);
-  @include command-typewriter(0, 80%);
-  @include command-typewriter-height(0, 100%);
+  @include keyframes(command-typewriter) {
+    from { width: 0; }
+    to { width: 80%; }
+  }
+
+  @include keyframes(command-typewriter-height) {
+    from { height: 0; }
+    to { height: 100%; }
+  }
 }
 
 .input-prompt-final {
@@ -101,14 +103,16 @@ p {
   white-space: nowrap;
   width: 100%;
   @include animation(command-prompt-final, 1ms, backwards);
+  @include keyframes(command-prompt-final) {
+    from { width: 0; height: 0; }
+    to { width: 100%; height: 16px; }
+  }
 
   p {
     font-weight: 900;
     font-size: 14px;
     margin-bottom: 0;
   }
-
-  @include command-prompt-final;
 }
 
 @media (min-width: 768px) {
@@ -120,7 +124,6 @@ p {
     }
 
     .input-command {
-
        p {
          font-size: 14px;
        }
@@ -128,24 +131,28 @@ p {
   }
 
   .output-command {
+    @include keyframes(command-scroll) {
+      from { height: 0; }
+      to { height: 18px; }
+    }
 
     p {
       font-size: 14px;
     }
-
-    @include command-scroll(0, 18px);
   }
 
   .output-command__with-br {
+    @include keyframes(command-scroll__with-br) {
+      from { height: 0; }
+      to { height: 34px; }
+    }
+
     p {
       font-size: 14px;
     }
-
-    @include command-scroll__with-br(0, 34px);
   }
 
   .input-prompt-final {
-
     p {
       font-size: 16px;
     }
@@ -166,28 +173,35 @@ p {
       }
     }
 
-    @include command-prompt(0,0,100%, 20px);
+    @include keyframes(command-prompt) {
+      from { width: 0; height: 0; }
+      to { width: 100%; height: 20px; }
+    }
   }
 
   .output-command {
     height: 22px;
+    @include keyframes(command-scroll) {
+      from { height: 0; }
+      to { height: 22px; }
+    }
 
     p {
       font-size: 16px;
       margin-bottom: 0;
     }
-
-    @include command-scroll(0, 22px);
   }
 
   .output-command__with-br {
     height: 40px;
+    @include keyframes(command-scroll__with-br) {
+      from { height: 0; }
+      to { height: 40px; }
+    }
 
     p {
       font-size: 16px;
     }
-
-    @include command-scroll__with-br(0, 40px);
   }
 
   .input-prompt-final {
