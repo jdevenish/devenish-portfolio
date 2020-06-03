@@ -41,7 +41,9 @@ These are shown from the most recent to the oldest.
 * Json Web Token - 8.5.1
 
 ## Code Examples
-Show examples of usage:
+With so many animations occuring, who wants to type out all of the vendor prefixes
+for each browser? Thankfully I used SASS and was able to make use of mixins and context
+to simplify the process. 
 `put-your-code-here`
 
 ## Status
