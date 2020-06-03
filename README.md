@@ -44,7 +44,19 @@ These are shown from the most recent to the oldest.
 With so many animations occuring, who wants to type out all of the vendor prefixes
 for each browser? Thankfully I used SASS and was able to make use of mixins and context
 to simplify the process. 
-`put-your-code-here`
+```
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+```
 
 ## Status
 Project is: _in progress_
