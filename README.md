@@ -15,10 +15,13 @@ Welcome to my portfolio repo! This repo contains the front-end code currently be
 Add more general information about project. What the purpose of the project is? Motivation?
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+### Desktop
+![Landing Page](https://res.cloudinary.com/doaftkgbv/image/upload/v1591219984/portfolio-landing-gif_l2xqxh.gif)
+![Projects](https://res.cloudinary.com/doaftkgbv/image/upload/v1591220158/Projects_jd9qlf.png)
+![About](https://res.cloudinary.com/doaftkgbv/image/upload/v1591220219/About_bug1bb.png)
 
 ## Technologies
-* Tech 1 - version 1.0
+* T
 * Tech 2 - version 2.0
 * Tech 3 - version 3.0
 
