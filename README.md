@@ -17,13 +17,21 @@ Add more general information about project. What the purpose of the project is? 
 ## Screenshots
 ### Desktop
 ![Landing Page](https://res.cloudinary.com/doaftkgbv/image/upload/v1591219984/portfolio-landing-gif_l2xqxh.gif)
-![Projects](https://res.cloudinary.com/doaftkgbv/image/upload/v1591220158/Projects_jd9qlf.png)
-![About](https://res.cloudinary.com/doaftkgbv/image/upload/v1591220219/About_bug1bb.png)
 
 ## Technologies
-* T
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+### Front End
+* React
+* React Router
+* SASS
+* Bootstrap
+* Axios
+
+### Back End
+* MongoDB
+* Mongoose
+* Express
+* Bcrypt
+* Json Web Token
 
 ## Setup
 Describe how to install / setup your local environement / add link to demo version.
