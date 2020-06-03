@@ -58,4 +58,4 @@ To-do list:
 Project is: _in progress_
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+<p>Created by <a href="mailto:justin.devenish@gmail.com">@jdevenish</a> - feel free to contact me!</p>
