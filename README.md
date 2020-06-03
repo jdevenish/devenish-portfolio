@@ -20,21 +20,18 @@ Add more general information about project. What the purpose of the project is? 
 
 ## Technologies
 ### Front End
-* React
-* React Router
-* SASS
-* Bootstrap
-* Axios
+* React - 16.13.1
+* React Router - 5.2.0
+* SASS - 4.14.1
+* Bootstrap - 4.5.0
+* Axios - 0.19.2
 
 ### Back End
 * MongoDB
-* Mongoose
-* Express
-* Bcrypt
-* Json Web Token
-
-## Setup
-Describe how to install / setup your local environement / add link to demo version.
+* Mongoose - 5.9.16
+* Express - 4.17.1
+* Bcrypt - 4.0.1
+* Json Web Token - 8.5.1
 
 ## Code Examples
 Show examples of usage:
