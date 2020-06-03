@@ -5,10 +5,8 @@ Welcome to my portfolio repo! This repo contains the front-end code currently be
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
+* [Code Examples](#code-examples)
 * [Status](#status)
-* [Inspiration](#inspiration)
 * [Contact](#contact)
 
 ## General info
