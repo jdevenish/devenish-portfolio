@@ -12,7 +12,14 @@ Welcome to my portfolio repo! This repo contains the front-end code currently be
 * [Contact](#contact)
 
 ## General info
-Add more general information about project. What the purpose of the project is? Motivation?
+Who doesn't need a cool way to showcase what they're capable of and to display
+some interesting projects? This site is meant to just that. 
+
+The landing page is meant to draw in the user by simulating a terminal. Here they can 
+watch scripts for each component be executed, install, render and complete. 
+
+Next is the project section showing some of the projects I've enjoyed building. 
+These are shown from the most recent to the oldest. 
 
 ## Screenshots
 ### Desktop
@@ -48,7 +55,7 @@ To-do list:
 * Wow improvement to be done 2
 
 ## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
+Project is: _in progress_
 
 ## Contact
 Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
